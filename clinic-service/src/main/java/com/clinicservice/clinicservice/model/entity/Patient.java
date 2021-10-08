@@ -1,6 +1,7 @@
 package com.clinicservice.clinicservice.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
@@ -14,6 +15,7 @@ import java.util.List;
 @Table(name = "patient")
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class Patient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

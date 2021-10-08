@@ -1,5 +1,6 @@
 package com.clinicservice.clinicservice.model.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
@@ -13,6 +14,7 @@ import java.util.Date;
 @Table(name = "appointments")
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class Appointments {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
