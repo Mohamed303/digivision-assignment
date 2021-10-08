@@ -16,7 +16,7 @@ public class GatewayApplication {
 	}
 	@Bean
 	public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
-		return builder.routes().route(r -> r.path("/clinic-service/**")
+			return builder.routes().route(r -> r.path("/clinic-service/**")
 						.filters(f -> f.rewritePath("/clinic-service/(?<path>.*)", "/$\\{path}"))
 						.uri("http://localhost:8080"))
 				.build();
