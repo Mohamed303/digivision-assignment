@@ -1,0 +1,12 @@
+server:
+  port: 8085
+  tomcat.max-threads: 800
+  max-http-header-size: 102400
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+  instance:
+    preferIpAddress: true
